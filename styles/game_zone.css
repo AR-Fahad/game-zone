@@ -255,6 +255,55 @@ main{
     justify-content: center;
     gap: 30px;
 }
+.optional{
+    display: flex;
+    background-color: #FF42A5;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.optional img{
+    width: 95%;
+}
+.optional h3{
+    color: #FFF;
+    font-size: 48px;
+    font-weight: 700;
+}
+.optional p{
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 400;
+}
+.optional-ul{
+    display: flex;
+    gap: 60px;
+}
+.optional-ul ul{
+    list-style: none;
+}
+.optional-ul li{
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+}
+.left-ul, .left-ul>li{
+    text-align: left;
+}
+.right-ul, .right-ul>li{
+    text-align: right;
+}
+
+.see-btn{
+    padding: 20px 40px;
+    border-radius: 48px;
+    background-color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    color: #FF42A5;
+    border: none;
+    cursor: pointer;
+}
 
 /* for Mobile screen */
 @media screen and (max-width: 600px) {
@@ -262,7 +311,8 @@ main{
     .nav-bar ul,
     .everyone,
     .game-box,
-    .play{
+    .play,
+    .optional{
         flex-direction: column;
     }
     .grid{
@@ -315,8 +365,19 @@ main{
     }
     .foot{
         height: 550px;
-        width: 598px;
+        width: 600px;
         margin: 0px;
+    }
+    .optional{
+        width: 600px;
+        gap: 30px;
+        padding: 5px;
+    }
+    .optional img{
+        width: 100%;
+    }
+    .optional-btn{
+        text-align: center;
     }
 
 }
@@ -326,14 +387,14 @@ main{
     .nav-bar ul,
     .everyone,
     .game-box,
-    .play{
+    .play,
+    .optional{
         flex-direction: column;
     }
     .grid{
         display: flex;
         flex-wrap: wrap;
-        width: 990px;
-        height: 400px;
+        width: 992px;
     }
     .grid-div{
         padding: 5px;
@@ -379,7 +440,15 @@ main{
     }
     .foot{
         height: 550px;
-        width: 990px;
+        width: 992px;
         margin: 0px;
+    }
+    .optional{
+        width: 992px;
+        gap: 30px;
+        padding: 10px;
+    }
+    .optional img{
+        width: 100%;
     }
 }
