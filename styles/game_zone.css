@@ -230,7 +230,7 @@ main{
 .foot{
     background-color: #0B0223;
     text-align: center;
-    height: 400px;
+    height: 450px;
 }
 .end > h3{
     color: white;
@@ -241,6 +241,19 @@ main{
 }
 .end{
     justify-content: center;
+}
+.foot a{
+    text-decoration: none;
+}
+.icon-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+.icon, .icon2{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
 }
 
 /* for Mobile screen */
@@ -256,6 +269,7 @@ main{
         grid-template-columns: 1fr 1fr 1fr;
         padding: 0px;
         margin: 0px auto;
+        width: 598px;
     }
     .grid-div{
         padding: 5px;
@@ -300,8 +314,8 @@ main{
         grid-template-columns: repeat(2,1fr);
     }
     .foot{
-        height: 500px;
-        width: 605px;
+        height: 550px;
+        width: 598px;
         margin: 0px;
     }
 
@@ -318,7 +332,7 @@ main{
     .grid{
         display: flex;
         flex-wrap: wrap;
-        width: 992px;
+        width: 990px;
         height: 400px;
     }
     .grid-div{
@@ -364,8 +378,8 @@ main{
         grid-template-columns: repeat(2,1fr);
     }
     .foot{
-        height: 500px;
-        width: 1000px;
+        height: 550px;
+        width: 990px;
         margin: 0px;
     }
 }
